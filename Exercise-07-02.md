@@ -17,7 +17,7 @@ Again, the high degree of autocorrelation leads to a small ESS.
 ### Medium standard deviation
 In contrast, the low degree of autocorrelation leads to a large ESS.
 
-![mediumSD](Exercise-07-02SD2Init0.01.png) 
+![mediumSD](Exercise-07-02SD0.2Init0.01.png) 
 
 ## (B)
 
