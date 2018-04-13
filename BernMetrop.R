@@ -45,14 +45,14 @@ trajectory = rep( 0 , trajLength )
 trajectory[1] = 0.01 # arbitrary value
 # Specify the burn-in period:
 burnIn = ceiling( 0.0 * trajLength ) # arbitrary number, less than trajLength
-# Initialize accepted, rejected counters, just to monitor performance:
-nAccepted = 0
-nRejected = 0
 
 # Now generate the random walk. The 't' index is time or trial in the walk.
 # Specify seed to reproduce same random walk:
 set.seed(47406)
 for (SDindex in 1:3) {
+    # Initialize accepted, rejected counters, just to monitor performance:
+    nAccepted = 0
+    nRejected = 0
     # Specify standard deviation of proposal distribution:
     proposalSD = c(0.02,0.2,2.0)[SDindex]
     for ( t in 1:(trajLength-1) ) {
